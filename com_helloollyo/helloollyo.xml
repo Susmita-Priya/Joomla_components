@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+
+	<name>Hello Ollyo!</name>
+
+	<!-- The following elements are optional and free of formatting constraints -->
+	<creationDate>April 2025</creationDate>
+	<author>Susmita</author>
+	<authorEmail>susmita.saha.se@gmail.com</authorEmail>
+	<authorUrl>http://www.example.org</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+
+	<!--  The version string is recorded in the components table -->
+	<version>0.0.3</version>
+
+	<!-- The description is optional -->
+	<description>Description of the Hello Ollyo component ...</description>
+
+    <!-- Update database schema on upgrade -->
+	<update> 
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<!-- Site Files -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>helloollyo.php</filename>
+        <filename>controller.php</filename>
+		<folder>views</folder>
+	</files>
+
+    <!-- Admin Panel -->
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu link='index.php?option=com_helloollyo'>Hello Ollyo!</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>helloollyo.php</filename>
+			<folder>sql</folder>
+		</files>
+	</administration>
+
+</extension>
