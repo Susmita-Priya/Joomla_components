@@ -12,7 +12,7 @@
 	<license>License Info</license>
 
 	<!--  The version string is recorded in the components table -->
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 
 	<!-- The description is optional -->
 	<description>Description of the Hello Ollyo component ...</description>
@@ -30,6 +30,7 @@
 		<filename>helloollyo.php</filename>
         <filename>controller.php</filename>
 		<folder>views</folder>
+		<folder>models</folder>
 	</files>
 
     <!-- Admin Panel -->
