@@ -4,3 +4,22 @@
 		<message>COM_HELLOOLLYO_HELLOOLLYO_VIEW_DEFAULT_DESC</message>
 	</layout>
 </metadata>
+
+<metadata>
+	<layout title="COM_HELLOOLLYO_HELLOOLLYO_VIEW_DEFAULT_TITLE">
+		<message>COM_HELLOOLLYO_HELLOOLLYO_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields
+			name="request"
+			addfieldpath="/administrator/components/com_helloollyo/models/fields"
+			>
+		<fieldset name="request">
+			<field
+					name="id"
+					type="helloollyo"
+					label="COM_HELLOOLLYO_HELLOOLLYO_FIELD_GREETING_LABEL"
+					description="COM_HELLOOLLYO_HELLOOLLYO_FIELD_GREETING_DESC"
+					/>
+		</fieldset>
+	</fields>
+</metadata>

@@ -11,11 +11,25 @@
 	<copyright>Copyright Info</copyright>
 	<license>License Info</license>
 
+
 	<!--  The version string is recorded in the components table -->
-	<version>0.0.4</version>
+	<version>0.0.2</version>
+
 
 	<!-- The description is optional -->
 	<description>Description of the Hello Ollyo component ...</description>
+
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>  
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
 
     <!-- Update database schema on upgrade -->
 	<update> 
@@ -23,6 +37,7 @@
 			<schemapath type="mysql">sql/updates/mysql</schemapath>
 		</schemas>
 	</update>
+
 
 	<!-- Site Files -->
 	<files folder="site">
@@ -33,15 +48,23 @@
 		<folder>models</folder>
 	</files>
 
+
     <!-- Admin Panel -->
-	<administration>
+	<administration>  
+
 		<!-- Administration Menu Section -->
 		<menu link='index.php?option=com_helloollyo'>Hello Ollyo!</menu>
+		
 		<files folder="admin">
 			<filename>index.html</filename>
 			<filename>helloollyo.php</filename>
+			<filename>controller.php</filename>
 			<folder>sql</folder>
+			<folder>views</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+	   		<folder>controllers</folder>
 		</files>
 	</administration>
-
+	
 </extension>
